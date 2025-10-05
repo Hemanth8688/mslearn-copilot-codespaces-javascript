@@ -52,7 +52,7 @@ h1 {
   line-height: 0.8;
   margin: 0;
 }
-
+/* make h1 responsive */
 h2 {
   font-size: 2rem;
   font-weight: 400;
@@ -88,7 +88,7 @@ hr {
 li {
   line-height: 1.7;
 }
-
+/* style the bullet points */
 li::marker {
   color: #4e567e;
 }
@@ -122,4 +122,20 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* add an amazing animation to the social icons */
+img.socialIcon:hover {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
